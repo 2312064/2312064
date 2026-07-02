@@ -61,9 +61,14 @@ User id | INT
 Name    | VARCHAR(50)
 E-mail  | VARCHAR(100)
 is_read | BOOLEAN
-time    | TIMESTAMP
+created_at | TIMESTAMP
 
 
 If the data volume is increased then the data traffic and slow processing of datas are occured to avoid it we have to use indexing methods to optimise the query processing, and using separate tables for each users (user, notification, uploads,... so on)
 
 I would suggest NOSQL as they are relational db and efficient for online use also.
+
+
+#STAGE-3
+
+this is not the correct querry, this give the student id = 1042 alone and also they used grouping in ascending order by the created at time.  with indexing we can only identify the indexes created for the attribute.
